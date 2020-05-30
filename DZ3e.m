@@ -1,0 +1,10 @@
+u=linspace(0,10,40); v=linspace(-10,10,40);
+[UU,VV]=meshgrid(u,v);
+a=4;
+x=a*UU.^2;
+y=2*a*UU;
+z=VV;
+surf(x,y,z);
+xlabel('X'); ylabel('Y');
+zlabel('Z'); 
+title('Параболический цилиндр');

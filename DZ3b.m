@@ -1,0 +1,10 @@
+u=linspace(0,5,40); v=linspace(0,2*pi,40);
+[UU,VV]=meshgrid(u,v);
+a=2; c=1;
+x=a*cosh(UU).*cos(VV);
+y=a*cosh(UU).*sin(VV);
+z=c*sinh(UU);
+surf(x,y,z);
+xlabel('X'); ylabel('Y');
+zlabel('Z'); 
+title('Однополостный гиперболоид вращения');

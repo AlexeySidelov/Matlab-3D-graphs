@@ -1,0 +1,10 @@
+u=linspace(0,10,40); v=linspace(-2*pi,2*pi,40);
+[UU,VV]=meshgrid(u,v);
+a=2;b=3;
+x=(a+b*cos(VV)).*cos(UU);
+y=(a+b*cos(VV)).*sin(UU);
+z=b*sin(VV);
+surf(x,y,z);
+xlabel('X'); ylabel('Y');
+zlabel('Z'); 
+title('Круговой тор');

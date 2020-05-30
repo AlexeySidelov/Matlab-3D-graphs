@@ -1,0 +1,10 @@
+u=linspace(0,2*pi,40); v=linspace(-pi/2,pi/2,40);
+[UU,VV]=meshgrid(u,v);
+a=1;b=4;
+x=a*cos(UU).*cos(VV);
+y=a*sin(UU).*cos(VV);
+z=b*sin(VV);
+surf(x,y,z);
+xlabel('X'); ylabel('Y');
+zlabel('Z'); 
+title('Эллипсоид вращения');

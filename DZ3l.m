@@ -1,0 +1,10 @@
+f=linspace(0,2*pi,40); v=linspace(0,5,40);
+[FF,VV]=meshgrid(f,v);
+a=2; b=5; R=3;
+x=(a+R*sin(FF)).*cos(VV);
+y=(a+R*sin(FF)).*sin(VV);
+z=R*cos(FF)+b*VV;
+surf(x,y,z);
+xlabel('X'); ylabel('Y');
+zlabel('Z'); 
+title('Винтовой тор');

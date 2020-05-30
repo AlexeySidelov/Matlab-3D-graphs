@@ -1,0 +1,10 @@
+u=linspace(-5,5,40); v=linspace(-pi,pi,40);
+[UU,VV]=meshgrid(u,v);
+a=4; b=2;
+x=a*UU.*cosh(VV);
+y=b*UU.*sinh(VV);
+z=UU.^2;
+surf(x,y,z);
+xlabel('X'); ylabel('Y');
+zlabel('Z'); 
+title('Гиперболический параболоид');
